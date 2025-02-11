@@ -1,1 +1,1 @@
-echo hola
+#!/bin/bash
