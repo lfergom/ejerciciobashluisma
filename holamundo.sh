@@ -21,3 +21,15 @@ sleep 2
 start "$Meme_URL_2"  # Abre el segundo video meme en el navegador
 sleep 2  # Esperamos antes de pasar al siguiente paso
 
+
+# Mensaje final del "virus"
+echo "¡JAJAJA! Te has convertido en víctima del virus de chill de cojones. 😈"
+sleep 2
+echo "Recuerda, no puedes escapar. ¡La risa es inevitable! 😂"
+sleep 2
+echo "Si no te has reído, el virus podría repetirse... ¡¡PIM PAM TOMÁ LACASITOS!! 🍬"
+sleep 2
+echo "Este virus ha sido desactivado por ahora, pero siempre puedes invocar más memes. 😏"
+sleep 2
+echo "¡Nos vemos en la próxima broma, si es que sobreviviste! 😜"
+sleep 1
