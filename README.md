@@ -1,15 +1,18 @@
-# Hola Mundo - Script de Broma en Bash
+Virus de Chill de Cojones 😎
 
-Este script es una broma diseñada para hacer reír a la persona que lo ejecute. Simula un "virus" que abre dos videos de YouTube y muestra algunos mensajes graciosos, 
-todo con un toque de humor. **¡Es totalmente inofensivo!** 😄
+Este es un script de broma en Bash que "infecta" tu sistema con pura risa y buen rollo. Al ejecutarlo, se mostrarán mensajes divertidos y se abrirán memes épicos en YouTube.
 
-## Descripción
+🚀 Características
 
-El script realiza lo siguiente:
-1. Muestra una advertencia en la terminal como si fuera un "virus".
-2. Abre dos videos de YouTube con memes en el navegador predeterminado.
-3. Muestra una serie de mensajes graciosos, como si estuvieras siendo atacado por un "virus de chill".
-4. Finaliza con un mensaje de broma.
+Muestra mensajes de "advertencia" falsos
 
-**¡Recuerda que es solo para divertirse!** No causa ningún daño en tu sistema.
+Abre videos de memes automáticamente en el navegador
+
+Compatible con Ubuntu y otras distribuciones Linux
+
+¡Ideal para gastar bromas a tus amigos! 😈
+
+📦 Requisitos
+
+Ubuntu o cualquier distribución de Linux con un navegador web
 
