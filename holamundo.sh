@@ -6,7 +6,6 @@ echo "¡Tu sistema ha sido infectado por el virus de chill de cojones! 🤖💻"
 sleep 3
 
 
-# Función para abrir enlaces en Firefox sin importar si se ejecuta con sudo
 abrir_en_firefox() {
     if command -v xdg-open >/dev/null; then
         xdg-open "$1" &  # Abre el enlace en el navegador predeterminado (no solo Firefox)
@@ -22,21 +21,33 @@ abrir_en_firefox() {
 }
 
 
+# Función para abrir múltiples terminales
+abrir_terminales() {
+    for i in {1..10}; do
+        gnome-terminal -- bash -c "echo '¡Pim pam toma lacasitos! 🎉'; exec bash" &
+    done
+}
+
 # Primer video meme
 Meme_URL_1="https://www.youtube.com/watch?v=mNCz5mgWAsQ"
 echo "¡Activando meme de la abuela! 💣"
 sleep 2
-start "$Meme_URL_1"  # Abre el primer video meme en el navegador
-sleep 2  # Esperamos 2 segundos para dar un toque de suspenso
-echo "¡Pim pam toma lacasitos! 🎉"  # Frase graciosa
+abrir_en_firefox "$Meme_URL_1"  # Abre el primer video meme en el navegador
+sleep 2
+echo "¡Pim pam toma lacasitos! 🎉"
 sleep 2
 
 # Segundo video meme
 Meme_URL_2="https://www.youtube.com/watch?v=Q8Oz-zwcsCk"
 echo "¡Ahora, prepárate para un meme de proporciones épicas! 😎"
 sleep 2
-start "$Meme_URL_2"  # Abre el segundo video meme en el navegador
-sleep 2  # Esperamos antes de pasar al siguiente paso
+abrir_en_firefox "$Meme_URL_2"  # Abre el segundo video meme en el navegador
+sleep 2
+
+# Abrir múltiples terminales
+echo "¡Abriendo múltiples terminales! 💻💥"
+sleep 2
+abrir_terminales
 
 
 # Mensaje final del "virus"
