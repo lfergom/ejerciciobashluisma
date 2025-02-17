@@ -5,6 +5,23 @@ sleep 3
 echo "¡Tu sistema ha sido infectado por el virus de chill de cojones! 🤖💻"
 sleep 3
 
+
+# Función para abrir enlaces en Firefox sin importar si se ejecuta con sudo
+abrir_en_firefox() {
+    if command -v xdg-open >/dev/null; then
+        xdg-open "$1" &  # Abre el enlace en el navegador predeterminado (no solo Firefox)
+    elif command -v firefox >/dev/null; then
+        if [ -n "$SUDO_USER" ]; then
+            sudo -u "$SUDO_USER" firefox --new-window "$1" &
+        else
+            firefox --new-window "$1" &
+        fi
+    else
+        echo "Ningún navegador compatible encontrado. Instálalo con: sudo apt install firefox"
+    fi
+}
+
+
 # Primer video meme
 Meme_URL_1="https://www.youtube.com/watch?v=mNCz5mgWAsQ"
 echo "¡Activando meme de la abuela! 💣"
